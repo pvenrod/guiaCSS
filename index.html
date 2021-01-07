@@ -7,16 +7,25 @@
     <script src="jquery/jquery.js"></script>
     <script>
 
-        setTimeout(function() {
-            $("#header").removeClass("headerPos1");
-            $("#header").addClass("headerPos2");
-            $("#logo").removeClass("logoPos1");
-            $("#logo").addClass("logoPos2");
-            setTimeout(function() {     
-                $("#header").append($("#logo"));
-                $(".menu").show(500);
+        $(document).ready(function() {
+            setTimeout(function() {
+                $("#header").removeClass("headerPos1");
+                $("#header").addClass("headerPos2");
+                $("#logo").removeClass("logoPos1");
+                $("#logo").addClass("logoPos2");
+                setTimeout(function() {     
+                    $("#header").append($("#logo"));
+                    $(".menu").show(500);
+                    $("#content").css("opacity","1");
+                },1000)
             },1000)
-        },1000)
+
+            $(".menu td").click(function() {
+                $(".menu td").removeClass("hovered");
+                $(this).addClass("hovered");
+                $("#content table").css("transform", "translateX(-"+this.id+"%)")
+            })
+        })
 
     </script>
     <title>Document</title>
@@ -26,22 +35,193 @@
     <div class="headerPos1" id="header">
         <table id="menuIzq" class="menu">
             <tr>
-                <td>INICIO</td>
-                <td>VERSIONES</td>
-                <td>RESPONSIVIDAD</td>
+                <td class="hovered" id="0">INICIO</td>
+                <td id="16.66">VERSIONES</td>
+                <td id="33.33">RESPONSIVIDAD</td>
             </tr>
         </table>
         <table id="menuDer" class="menu">
             <tr>
-                <td>SELECTORES</td>
-                <td>PROPIEDADES</td>
-                <td>EXTRA</td>
+                <td id="50">SELECTORES</td>
+                <td id="66.66">PROPIEDADES</td>
+                <td id="83.33">EXTRA</td>
             </tr>
         </table>
     </div>
     <img src="img/logo.png" class="logoPos1" id="logo">
     <div id="content">
-
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
     <div id="footer">
 

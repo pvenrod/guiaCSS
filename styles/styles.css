@@ -7,6 +7,7 @@ body {
     margin: 0;
     background-color: rgb(235, 235, 235);
     font-family: mifuente;
+    overflow: hidden;
 }
 
 .headerPos1 {
@@ -70,8 +71,49 @@ body {
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0 0 8px 8px  #0d9ddb inset;
-    text-align: middle;
+    text-align: center;
 }
-#header .menu td:hover {
+#header .menu td:hover, td.hovered {
     background-color: rgb(0, 81, 255);
+}
+
+#content {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    min-height: 100vh;
+    font-family: arial;
+    z-index: -2;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+#content table {
+    width: 600%;
+    height: 100%;
+    transition: 0.7s;
+}
+
+#content table td {
+    width: 16.66%;
+    text-align: center;
+    padding: 50px;
+}
+
+#content table td div {
+    margin-top: 50px;
+    background-color: rgb(228, 250, 255);
+    width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    padding: 50px;
+    box-shadow: 0 0 15px 15px rgb(235, 235, 235) inset;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+#content table td div:hover {
+    background-color:white;
 }
