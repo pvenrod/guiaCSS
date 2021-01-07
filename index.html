@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="jquery/jquery.js"></script>
+    <script>
+
+        setTimeout(function() {
+            $("#header").removeClass("headerPos1");
+            $("#header").addClass("headerPos2");
+            $("#logo").removeClass("logoPos1");
+            $("#logo").addClass("logoPos2");
+            setTimeout(function() {     
+                $("#header").append($("#logo"));
+                $(".menu").show(500);
+            },1000)
+        },1000)
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="headerPos1" id="header">
+        <table id="menuIzq" class="menu">
+            <tr>
+                <td>INICIO</td>
+                <td>VERSIONES</td>
+                <td>RESPONSIVIDAD</td>
+            </tr>
+        </table>
+        <table id="menuDer" class="menu">
+            <tr>
+                <td>SELECTORES</td>
+                <td>PROPIEDADES</td>
+                <td>EXTRA</td>
+            </tr>
+        </table>
+    </div>
+    <img src="img/logo.png" class="logoPos1" id="logo">
+    <div id="content">
+
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+</html>
