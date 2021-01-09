@@ -5,9 +5,9 @@
 
 body {
     margin: 0;
-    background-color: rgb(235, 235, 235);
+    background-color:#89dbff;
     font-family: mifuente;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .headerPos1 {
@@ -35,7 +35,8 @@ body {
     position: fixed;
     top: 0px;
     transition: 1s;
-    box-shadow: 0px 0px 10px rgb(78, 78, 78);
+    box-shadow: 0px 10px 10px #0d9ddb;
+    padding-top: 2px;
 }
 .logoPos2 {
     height: 110px;
@@ -90,30 +91,50 @@ body {
 
 #content table {
     width: 600%;
-    height: 100%;
+    height: 500px;
     transition: 0.7s;
+    vertical-align: top;
+    margin-top: 20px;
 }
 
 #content table td {
     width: 16.66%;
     text-align: center;
     padding: 50px;
+    vertical-align: top;
+}
+
+#content tr {
+    height: 33%;
 }
 
 #content table td div {
     margin-top: 50px;
-    background-color: rgb(228, 250, 255);
+    background-color: white;
     width: 700px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
     padding: 50px;
-    box-shadow: 0 0 15px 15px rgb(235, 235, 235) inset;
+    box-shadow: 0 0 15px 15px white;
     border-radius: 50px;
     transition: 0.5s;
+    color:#0099ff;
+}
+#content table td div:hover:not(.textoNo) {
+    box-shadow: 0 0 25px 25px white;
 }
 
-#content table td div:hover {
-    background-color:white;
+#content table td div .tituloContent {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.textoNo {
+    border: none !important;
 }
