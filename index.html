@@ -17,6 +17,7 @@
                     $("#header").append($("#logo"));
                     $(".menu").show(500);
                     $("#content").css("opacity","1");
+                    $("#arriba").show(500);
                 },1000)
             },1000)
 
@@ -24,6 +25,11 @@
                 $(".menu td").removeClass("hovered");
                 $(this).addClass("hovered");
                 $("#content table").css("transform", "translateX(-"+this.id+"%)")
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+            })
+
+            $("#arriba").click(function() {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
             })
         })
 
@@ -35,8 +41,8 @@
     <div class="headerPos1" id="header">
         <table id="menuIzq" class="menu">
             <tr>
-                <td class="hovered" id="0">INICIO</td>
-                <td id="16.66">VERSIONES</td>
+                <td class="hovered" id="0">DEFINICION</td>
+                <td id="16.66">SELECTORES</td>
                 <td id="33.33">RESPONSIVIDAD</td>
             </tr>
         </table>
@@ -54,19 +60,34 @@
             <tr>
                 <td>
                     <div>
+                        <span class="tituloContent">Definición</span>
+                        <div class="textoNo" style="text-align: left; box-shadow: none; background-color: transparent; margin-top: 30px; padding: 0px;">
                         CSS o "Cascading Style Sheets" es un lenguaje de hojas de estilo
                         creado para controlar el aspecto de los documentos HTML. 
-                        CSS es la mejor forma de separar los contenidos de su presentación y es 
-                        imprescindible para crear páginas web complejas.
+                        CSS es la mejor forma de <strong>separar los contenidos de su presentación</strong> y es 
+                        imprescindible para crear páginas web complejas.<br>
+                        Un estilo CSS está formado de la siguiente manera:<br><br>
+                        <span style="color: orange">selector</span> <span style="color: rgb(0, 217, 255)">{</span><br>
+                            <span style="color: rgb(93, 106, 116)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;propiedad</span>: <span style="color: rgb(255, 72, 0)">valor</span>;<br>
+                        <span style="color: rgb(0, 217, 255)">}</span>
+</div>
+                    </div><br><br><br>
+                    <div class="textoNo" style="margin-top: 60px;text-align: left; box-shadow: none; background-color: transparent; margin-top: 10px;">
+                        <img src="img/c.png" class="globo c">
+                        <img src="img/s1.png" class="globo s1">
+                        <img src="img/s2.png" class="globo s2">
                     </div>
                 </td>
                 <td>
                     <div>
-                        CSS o <i>Cascade Style Sheets</i> es un lenguaje que define
-                        la apariencia de un documento escrito en algún lenguaje de marcado,
-                        permitiendo separar completamente el contenido del documento de su
-                        aspecto visual.
-                    </div>
+                        <span class="tituloContent">Selectores</span><br><br>
+                        Los selectores son la referencia a la etiqueta, id o clase HTML.
+
+                        CSS o "Cascading Style Sheets" es un lenguaje de hojas de estilo
+                        creado para controlar el aspecto de los documentos HTML. 
+                        CSS es la mejor forma de <strong>separar los contenidos de su presentación</strong> y es 
+                        imprescindible para crear páginas web complejas.<br>
+                    </div><br><br><br>
                 </td>
                 <td>
                     <div>
@@ -196,8 +217,8 @@
             
         </table>
     </div>
-    <div id="footer">
-
+    <div id="arriba">
+        <img src="img/arriba.png">
     </div>
 </body>
 </html>

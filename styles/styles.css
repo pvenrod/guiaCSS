@@ -138,3 +138,67 @@ body {
 .textoNo {
     border: none !important;
 }
+
+#arriba {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 40px; 
+    right: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px white;
+    cursor: pointer;
+    display: none;
+}
+#arriba img {
+    width: 100%;
+}
+
+.globo {
+    position: absolute;
+}
+
+.c {
+    left: 9%;
+    animation: c 8.2s ease-in-out infinite;
+}
+
+.s1 {
+    top: 10px;
+    left: 35%;
+    animation: s1 7.2s ease-in-out infinite;
+}
+
+.s2 {
+    top: 73px;
+    left: 60%;
+    animation: s2 8.2s ease-in-out infinite;
+}
+
+@keyframes c {
+    0%, 100% {
+        transform: translateY(0) rotate(-6deg);
+    }
+    50% {
+        transform: translateY(-1.25em) rotate(8deg);
+    }
+}
+
+@keyframes s1 {
+    0%,100% {
+        transform: translate(-0.9375em, 0.625em) rotate(10deg);
+    }
+    50% {
+        transform: translate(0.625em, -0.625em) rotate(-8deg);
+    }
+}
+
+@keyframes s2 {
+    0%, 100% {
+        transform: translateY(0) rotate(6deg);
+    }
+    50% {
+        transform: translateY(-1.875em) rotate(-8deg);
+    }
+}
