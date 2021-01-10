@@ -43,13 +43,13 @@
             <tr>
                 <td class="hovered" id="0">DEFINICION</td>
                 <td id="16.66">SELECTORES</td>
-                <td id="33.33">RESPONSIVIDAD</td>
+                <td id="33.33">PROPIEDADES</td>
             </tr>
         </table>
         <table id="menuDer" class="menu">
             <tr>
-                <td id="50">SELECTORES</td>
-                <td id="66.66">PROPIEDADES</td>
+                <td id="50">RESPONSIVIDAD</td>
+                <td id="66.66">ANIMACIONES</td>
                 <td id="83.33">EXTRA</td>
             </tr>
         </table>
@@ -61,35 +61,228 @@
                 <td>
                     <div>
                         <span class="tituloContent">Definición</span>
+
                         <div class="textoNo" style="text-align: left; box-shadow: none; background-color: transparent; margin-top: 30px; padding: 0px;">
-                        CSS o "Cascading Style Sheets" es un lenguaje de hojas de estilo
-                        creado para controlar el aspecto de los documentos HTML. 
-                        CSS es la mejor forma de <strong>separar los contenidos de su presentación</strong> y es 
-                        imprescindible para crear páginas web complejas.<br>
-                        Un estilo CSS está formado de la siguiente manera:<br><br>
-                        <span style="color: orange">selector</span> <span style="color: rgb(0, 217, 255)">{</span><br>
-                            <span style="color: rgb(93, 106, 116)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;propiedad</span>: <span style="color: rgb(255, 72, 0)">valor</span>;<br>
-                        <span style="color: rgb(0, 217, 255)">}</span>
-</div>
+                            CSS o "Cascading Style Sheets" es un lenguaje de hojas de estilo
+                            creado para controlar el aspecto de los documentos HTML. 
+                            CSS es la mejor forma de <strong>separar los contenidos de su presentación</strong> y es 
+                            imprescindible para crear páginas web complejas.<br><br>
+                            Un estilo CSS está formado de la siguiente manera:<br><br>
+                            <span style="color: orange">selector</span> <span style="color: rgb(0, 217, 255)">{</span><br>
+                                <span style="color: rgb(93, 106, 116)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;propiedad</span>: <span style="color: rgb(255, 72, 0)">valor</span>;<br>
+                            <span style="color: rgb(0, 217, 255)">}</span>
+                        </div>
+
                     </div><br><br><br>
+
                     <div class="textoNo" style="margin-top: 60px;text-align: left; box-shadow: none; background-color: transparent; margin-top: 10px;">
                         <img src="img/c.png" class="globo c">
                         <img src="img/s1.png" class="globo s1">
                         <img src="img/s2.png" class="globo s2">
                     </div>
+
                 </td>
+
+
+                
                 <td>
                     <div>
                         <span class="tituloContent">Selectores</span><br><br>
-                        Los selectores son la referencia a la etiqueta, id o clase HTML.
 
-                        CSS o "Cascading Style Sheets" es un lenguaje de hojas de estilo
-                        creado para controlar el aspecto de los documentos HTML. 
-                        CSS es la mejor forma de <strong>separar los contenidos de su presentación</strong> y es 
-                        imprescindible para crear páginas web complejas.<br>
-                    </div><br><br><br>
+                        <div class="textoNo" style="text-align: left; box-shadow: none; background-color: transparent; margin-top: 10px; padding: 0px;">
+                            Los selectores son la <strong>referencia</strong> a la etiqueta, id o clase HTML a la que se le van a
+                            aplicar una serie de estilos CSS.<br><br>
+                            Existen 4 tipos de selectores básicos:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Selector universal: <strong>*</strong><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Selector basado en etiqueta: <strong>input</strong>&nbsp;&nbsp;&nbsp;<span style="background-color:rgb(23, 21, 29)"><span style="color:aqua">&lt;</span><span style="color:rgb(252, 96, 96)">input</span><span style="color:aqua">&gt;</span></span>    <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Selector basado en clase: <strong>.miClase</strong>&nbsp;&nbsp;&nbsp;<span style="background-color:rgb(23, 21, 29)"><span style="color:aqua">&lt;</span><span style="color:rgb(252, 96, 96)">input</span> <span style="color:rgb(171, 57, 224)">class</span><span style="color:aqua">="</span><span style="color:rgb(174, 253, 71)">miClase</span><span style="color:aqua">"&gt;</span></span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Selector basado en ID: <strong>#miId</strong>&nbsp;&nbsp;&nbsp;<span style="background-color:rgb(23, 21, 29)"><span style="color:aqua">&lt;</span><span style="color:rgb(252, 96, 96)">input</span> <span style="color:rgb(171, 57, 224)">id</span><span style="color:aqua">="</span><span style="color:rgb(174, 253, 71)">miId</span><span style="color:aqua">"&gt;</span></span><br><br>
+                            Estos selectores pueden ser agrupados para definir varias propiedades comunes a diferentes elementos.<br>
+                        </div>
+
+                        <table class="tablaProp">
+                            <tr style="background-color: rgb(0, 17, 255); color: white; padding: 5px;">
+                                <th style="width: 20%">Selector</th>
+                                <th>Explicación</th>
+                                <th style="width: 20%">Versión CSS de aparición</th>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td><strong>input</strong></td>
+                                <td>Todos los elementos input</td>
+                                <td>1</td>
+                            </tr>
+                            <tr  style="background-color: rgb(244, 244, 255);">
+                                <td><strong>.miClase</strong></td>
+                                <td>Todos los elementos con clase "miClase"</td>
+                                <td>1</td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td><strong>#identificador</strong></td>
+                                <td>Todos los elementos con id "identificador"</td>
+                                <td>1</td>
+                            </tr>
+                            <tr  style="background-color: rgb(244, 244, 255);">
+                                <td><strong>input, strong</strong></td>
+                                <td>Todos los elementos input y todos los elementos strong</td>
+                                <td>1</td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td><strong>#identificador, input</strong></td>
+                                <td>Todos los elementos con id "identificador" y todos los elementos input</td>
+                                <td>1</td>
+                            </tr>
+                            <tr  style="background-color: rgb(244, 244, 255);">
+                                <td><strong>span strong</strong></td>
+                                <td>Todos los elementos strong que desciendan de un elemento span</td>
+                                <td>2</td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td><strong>input.clave</strong></td>
+                                <td>Todos los elementos input cuya clase sea "clave"</td>
+                                <td>1</td>
+                            </tr>
+                            <tr  style="background-color: rgb(244, 244, 255);">
+                                <td><strong>input[disabled]</strong></td>
+                                <td>Todos los elementos input que contengan el atributo "disabled"</td>
+                                <td>2</td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td><strong>input[type="password"]</strong></td>
+                                <td>Todos los elementos input que contengan el atributo "type" con el valor "password"</td>
+                                <td>1</td>
+                            </tr>
+                            <tr  style="background-color: rgb(244, 244, 255);">
+                                <td><strong>*</strong></td>
+                                <td>Todos los elementos</td>
+                                <td>2</td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td><strong>div > span</strong></td>
+                                <td>Todos los elementos span hijos de un elemento div</td>
+                                <td>2</td>
+                            </tr>
+                            <tr  style="background-color: rgb(244, 244, 255);">
+                                <td><strong>div + span</strong></td>
+                                <td>Todos los elementos span precedidos de un elemento div</td>
+                                <td>2</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <br><br>
+                    <div>
+                        <span class="tituloContent">Pseudoselectores</span><br><br>
+
+                        <div class="textoNo" style="text-align: left; box-shadow: none; background-color: transparent; margin-top: 10px; padding: 0px;">
+                            Los pseudoselectores funcionan de la misma forma que los selectores ya explicados, pero con una pequeña diferencia:<br>
+                            Hacen referencia a <strong>estados</strong> de un elemento que <strong>no pueden ser definidos en el código</strong>. Por ejemplo, si queremos
+                            que un enlace tenga un color diferente cuando ya ha sido visitadao, usaríamos el pseudoselector :visited.<br><br>
+                            Los pseudoselectores se escriben con dos puntos y detrás del selector, de la siguiente manera: <span style="color: orangered">selector</span><span style="color: rgb(32, 5, 83)">:</span><span style="color: rgb(151, 34, 136)">pseudoselector</span>.
+                        </div>
+
+                        <table class="tablaProp">
+                            <tr style="background-color: rgb(0, 17, 255); color: white; padding: 5px;">
+                                <th style="width: 20%">Selector</th>
+                                <th>Explicación</th>
+                                <th style="width: 20%">Versión CSS de aparición</th>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td><strong>:active</strong></td>
+                                <td>Un elemento con el que está interactuando el usuario</td>
+                                <td>1</td>
+                            </tr>
+                            <tr  style="background-color: rgb(244, 244, 255);">
+                                <td><strong>:link</strong></td>
+                                <td>Un enlace que no ha sido visitado</td>
+                                <td>1</td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td><strong>:visited</strong></td>
+                                <td>Un enlace que ya ha sido visitado</td>
+                                <td>1</td>
+                            </tr>
+                            <tr  style="background-color: rgb(244, 244, 255);">
+                                <td><strong>:fisrt-line</strong></td>
+                                <td>La primera línea formateada de un elemento</td>
+                                <td>1</td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td><strong>:first-child</strong></td>
+                                <td>El primer hijo de un elemento</td>
+                                <td>2</td>
+                            </tr>
+                            <tr  style="background-color: rgb(244, 244, 255);">
+                                <td><strong>:last-child</strong></td>
+                                <td>El último hijo de un elemento</td>
+                                <td>3</td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td><strong>::before</strong></td>
+                                <td>El contenido que hay antes de un elemento</td>
+                                <td>2</td>
+                            </tr>
+                            <tr  style="background-color: rgb(244, 244, 255);">
+                                <td><strong>::after</strong></td>
+                                <td>El contenido que hay después de un elemento</td>
+                                <td>2</td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td><strong>:checked</strong></td>
+                                <td>Un elemento marcado (como un checkbox)</td>
+                                <td>2</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
                 </td>
+
+
+                
                 <td>
+                    <div>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i> 
+                        CSS o <i>Cascade Style Sheets</i>
+                    </div>
+                </td>
+
+
+
+                <td>
+
                     <div>
 
                         <span class="tituloContent">Responsividad</span><br><br>
@@ -127,36 +320,13 @@
                         </div>
 
                         <img src="img/responsive5.gif" style="width: 80%; vertical-align: top;">
-
-                    </td>
-                <td>
-                    <div>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
+                    
                     </div>
+
                 </td>
+
+
+
                 <td>
                     <div>
                         CSS o <i>Cascade Style Sheets</i> 

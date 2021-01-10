@@ -131,6 +131,10 @@ body {
     font-weight: 700;
 }
 
+#content table td div strong{
+    color: rgb(0, 71, 165);
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -201,4 +205,24 @@ body {
     50% {
         transform: translateY(-1.875em) rotate(-8deg);
     }
+}
+
+.tablaProp {
+    width: 100% !important; 
+    height: auto !important; 
+    transform: none !important;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tablaProp td {
+    width: auto !important;
+    font-size: 16px;
+}
+
+.tablaProp td, .tablaProp th {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    vertical-align: middle !important;
 }
