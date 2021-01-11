@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #tablaEfectos {
+            width: 600px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #tablaEfectos img {
+            position: absolute;
+            width: 190px;
+        }
+
+        #tablaEfectos img.encima {
+            z-index: 1;
+            transition: 0.2s linear;
+            transform-origin: 97% 50%;
+        }
+
+        #tablaEfectos td:hover img.encima {
+            transform: rotate(-120deg);
+        }
+
+    </style>
+</head>
+<body>
+    <table id="tablaEfectos">
+        <tr>
+            <td>
+                <img src='img/p1.png'  class="encima" style="z-index:4;">
+                <img src='img/p2.png' class="debajo">
+            </td>
+            <td>
+                <img src='img/v1.png'  class="encima" style="z-index:3;">
+                <img src='img/v2.png' class="debajo">
+            </td>
+            <td>
+                <img src='img/r1.png'  class="encima" style="z-index:2;">
+                <img src='img/r2.png' class="debajo">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

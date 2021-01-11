@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Guía de CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="jquery/jquery.js"></script>
@@ -35,7 +36,6 @@
         })
 
     </script>
-    <title>Document</title>
 </head>
 <body>
 
@@ -69,7 +69,7 @@
                             CSS es la mejor forma de <strong>separar los contenidos de su presentación</strong> y es 
                             imprescindible para crear páginas web complejas.<br><br>
                             Un estilo CSS está formado de la siguiente manera:<br><br>
-                            <span style="color: orange">selector</span> <span style="color: rgb(0, 217, 255)">{</span><br>
+                            <span style="color: orange">selector</span><span style="color: rgb(0, 0, 0)">:</span><span  style="color: rgb(161, 75, 179)">pseudoselector </span><span style="color: rgb(0, 217, 255)">{</span><br>
                                 <span style="color: rgb(93, 106, 116)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;propiedad</span>: <span style="color: rgb(255, 72, 0)">valor</span>;<br>
                             <span style="color: rgb(0, 217, 255)">}</span>
                         </div>
@@ -475,12 +475,11 @@
                                 <td>background-color</td>
                                 <td>background-image</td>
                                 <td>background-size</td>
-                                <td>background-repeat</td>
                             </tr>
                             <tr style="background-color: rgb(244, 244, 255);">
                                 <td colspan="4">
                                     
-                                    <span style="display: block; width: 90%; height: 100px; padding: 15px; left: 50%;position: relative;transform: translateX(-50%);
+                                    <span style="display: block; width: 80%; height: 100px; padding: 15px; left: 50%;position: relative;transform: translateX(-50%);
                                                 background-image: url('img/background.png'); border: 2px solid black; border-radius: 20px;">
                                         <span style="display: block; position: relative; top: 50%; transform: translateY(-50%); color: black; font-size: 30px; font-weight: 700;">Caja de ejemplo</span>
                                     </span><br>
@@ -563,6 +562,23 @@
                                 <td>white-space</td>
                             </tr>
 
+                            <tr style="background-color: rgb(244, 244, 255);">
+                                <td colspan="4">
+                                    
+                                    <span style="overflow: scroll; display: block; width: 300px; height: 100px; padding: 15px; left: 50%;position: relative;transform: translateX(-50%); border-radius: 20px;
+                                                box-shadow: 0px 0px 10px black;
+                                                background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,141,0,1) 100%);">
+                                        <span style="white-space: nowrap; display: block; position: relative; top: 50%; transform: translateY(-50%); color: black; font-size: 20px; font-weight: 700;">
+                                            Caja de ejemplo
+                                        </span>
+                                    </span><br>
+
+                                    <span style="font-weight: 700;"> 
+                                        <span style="color:#474747">overflow-x:</span> <span style="color:#ff5100">scroll;</span><br>
+                                    </span>
+                                </td>
+                            </tr>
+
                         </table>
 
                         Para un listado con todas las propiedades de CSS, puedes visitar <a href="https://www.w3schools.com/cssref/">esta página</a>.
@@ -621,58 +637,36 @@
 
                 <td>
                     <div>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
+                        <span class="tituloContent animado">Animaciones</span><br><br>
+
+                        <div class="textoNo" style="text-align: left; box-shadow: none; background-color: transparent; margin-top: 10px;">
+                            Una animación de CSS permite que un elemento <strong>cambie gradualmente de un estilo a otro</strong>.<br>
+                            Durante una animación podemos cambiar todas las propiedades que queramos, las veces que queramos.<br><br>
+                            Para poder definir una animación, tendremos que especificar los <strong>"keyframes" </strong>que la componen, de la siguiente manera:
+                        </div>
+
+                        <img src="img/animation.png" style="width: 70%; vertical-align: top;">
+
+                        <div class="textoNo" style="text-align: left; box-shadow: none; background-color: transparent; margin-top: 10px;">
+                            Para hacer que un elemento realice esta animación, simplemente se la asignaremos a través de la propiedad animation: <br>
+                        </div>
+
+                        <img src="img/animation2.png" style="width: 70%; vertical-align: top;">
+                        
                     </div>
                 </td>
                 <td>
                     <div>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
+                        <span class="tituloContent">EXTRA</span>
+
+                        <div class="textoNo" style="text-align: left; box-shadow: none; background-color: transparent; margin-top: 10px;">
+                            Como información adicional pero no por ello menos últil, vamos a explicar otras características de CSS:<br><br>
+                            - La palabra reservada "<strong>!important</strong>" sirve para dar prioridad a una propiedad si esta ha sido definida más de una vez.<br>
+                            - Si queremos "resetear" el estilo de un elemento al que trae por defecto, basta con aplicar la propiedad "<strong>all: initial</strong>".<br>
+                        </div>
+
+                        <img src="img/extra2.png" style="width: 70%; vertical-align: top;">
+
                     </div>
                 </td>
             </tr>

@@ -228,3 +228,69 @@ body {
     padding-bottom: 20px !important;
     vertical-align: middle !important;
 }
+
+.animado {
+    animation: animacionEjemplo 5s ease-in-out infinite;
+    position: absolute;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@keyframes animacionEjemplo {
+
+    0% {
+        color: red;
+        transform: translateX(-50%) rotate(-20deg);
+        left: 15%;
+    }
+
+    16.66% {
+        color: orange;
+    }
+
+    33.33% {
+        color: rgb(173, 173, 0);
+    }
+
+    50% {
+        color: green;
+        transform: translateX(-50%) rotate(20deg);
+        left: 85%;
+    }
+
+    63.33% {
+        color: blue;
+    }
+
+    76.66% {
+        color: purple;
+    }
+
+    100% {
+        color: red;
+        transform: translateX(-50%) rotate(-20deg);
+        left: 15%;
+    }
+
+
+}
+
+@keyframes nombreAnimacion {
+
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: yellow;
+    }
+
+}
+
+#selector {
+
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black;
+    animation: nombreAnimacion 5s infinite;
+
+}
