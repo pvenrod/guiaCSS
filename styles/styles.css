@@ -8,6 +8,7 @@ body {
     background-color:#89dbff;
     font-family: mifuente;
     overflow-x: hidden;
+    cursor: cell;
 }
 
 .headerPos1 {
@@ -214,6 +215,7 @@ body {
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 60px;
 }
 
 .tablaProp td {

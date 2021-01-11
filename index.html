@@ -8,6 +8,7 @@
     <script>
 
         $(document).ready(function() {
+            $("html, body").animate({ scrollTop: 0 }, 50);
             setTimeout(function() {
                 $("#header").removeClass("headerPos1");
                 $("#header").addClass("headerPos2");
@@ -84,7 +85,7 @@
                 </td>
 
 
-                
+
                 <td>
                     <div>
                         <span class="tituloContent">Selectores</span><br><br>
@@ -252,30 +253,224 @@
                 
                 <td>
                     <div>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i> 
-                        CSS o <i>Cascade Style Sheets</i>
+                        <span class="tituloContent">Propiedades</span><br><br>
+
+                        <table class="tablaProp">
+                            <tr style="background-color: rgb(255, 94, 0); color: white; padding: 5px;">
+                                <th colspan="4">Propiedad position</th>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><strong>Permite dar una poisición concreta a un elemento.</strong></td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td colspan="4">
+                                    position<br>
+                                    Valores aceptados: <u>static</u> | <u>relative</u> | <u>absolute</u> | <u>fixed</u> | <u>sticky</u>
+                                </td>
+                            </tr>
+
+                            <tr style="background-color: rgb(244, 244, 255);">
+                                <td colspan="4">
+                                    
+                                    <iframe style="width: 100%; height: 150px;" src="iframe.html"></iframe>
+
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <table class="tablaProp">
+                            <tr style="background-color: rgb(255, 94, 0); color: white; padding: 5px;">
+                                <th colspan="4">Propiedades de tamaño</th>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><strong>Permiten dar una altura y anchura concreta a un elemento.</strong></td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td colspan="2">width</td>
+                                <td colspan="2">height</td>
+                            </tr>
+
+                            <tr style="background-color: rgb(244, 244, 255);">
+                                <td colspan="4">
+                                    Unidades absolutas: <u>cm</u> | <u>mm</u> | <u>in</u> | <u>px</u> | <u>pt</u> | <u>pc</u><br>
+                                    Unidades relativas: <u>em</u> | <u>ch</u> | <u>vw</u> | <u>vh</u> | <u>%</u>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <table class="tablaProp">
+                            <tr style="background-color: rgb(255, 94, 0); color: white; padding: 5px;">
+                                <th colspan="4">Propiedad font</th>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><strong>Permite modificar el tipo de letra</strong></td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td>font-family</td>
+                                <td>font-size</td>
+                                <td>font-weight</td>
+                                <td>font-style</td>
+                            </tr>
+
+                            <tr style="background-color: rgb(244, 244, 255);">
+                                <td colspan="4">
+                                    <span style="font-family: courier new; font-size: 24px; font-weight: 700; font-style: italic">CELIA VIÑAS</span><br><br>
+                                    <span style="font-weight: 700;"> 
+                                        <span style="color:#474747">font-family:</span> <span style="color:#ff5100">courier new;</span><br> 
+                                        <span style="color:#474747">font-size:</span> <span style="color:#ff5100">24px;</span><br> 
+                                        <span style="color:#474747">font-weight:</span> <span style="color:#ff5100">700;</span><br>
+                                        <span style="color:#474747">font-style:</span> <span style="color:#ff5100">italic;</span>
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </table>
+
+
+                        <table class="tablaProp">
+                            <tr style="background-color: rgb(255, 94, 0); color: white; padding: 5px;">
+                                <th colspan="4">Propiedades del texto</th>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><strong>Permite modificar la apariencia del texto</strong></td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td>color</td>
+                                <td>direction</td>
+                                <td>letter-spacing</td>
+                                <td>line-height</td>
+                            </tr>
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td>text-align</td>
+                                <td>text-decoration</td>
+                                <td>text-shadow</td>
+                                <td>line-height</td>
+                            </tr>
+                            <tr style="background-color: rgb(244, 244, 255);">
+                            <td colspan="4">
+                                <span style="font-size: 30px; font-weight: 700;color: #ffffff;text-shadow: 3px 5px 2px #474747, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;">CELIA VIÑAS</span><br><br>
+                                <span style="font-weight: 700;"> 
+                                    <span style="color:#474747">font-size:</span> <span style="color:#ff5100">30px;</span><br> 
+                                    <span style="color:#474747">font-weight:</span> <span style="color:#ff5100">700;</span><br> 
+                                    <span style="color:#474747">color:</span> <span style="color:#ff5100">#ffffff;</span><br>
+                                    <span style="color:#474747">text-shadow:</span> <span style="color:#ff5100">3px 5px 2px #grey;</span>
+                                </span>
+                            </td>
+                            </tr>
+
+                        </table>
+
+
+                        <table class="tablaProp">
+                            <tr style="background-color: rgb(255, 94, 0); color: white; padding: 5px;">
+                                <th colspan="4">Propiedad border</th>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><strong>Permite modificar el estilo de los bordes de una caja</strong></td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td>border</td>
+                                <td>border-color</td>
+                                <td>border-collapse</td>
+                                <td>border-radius</td>
+                            </tr>
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td>border-top</td>
+                                <td>border-bottom</td>
+                                <td>border-left</td>
+                                <td>border-right</td>
+                            </tr>
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td>border-style</td>
+                                <td>border-width</td>
+                                <td>border-spacing</td>
+                                <td>border-image</td>
+                            </tr>
+                            <tr style="background-color: rgb(244, 244, 255);">
+                                <td colspan="4">
+                                    <span style="display: block;padding: 15px; width: 60%; position: relative; left: 50%; transform: translateX(-50%);
+                                                font-size: 24px; font-weight: 700; border: 15px; border-style: solid;border-image:url('img/border.png') 20% round;">CELIA VIÑAS</span><br><br>
+                                    <span style="font-weight: 700;"> 
+                                        <span style="color:#474747">border:</span> <span style="color:#ff5100">15px;</span><br> 
+                                        <span style="color:#474747">border-style:</span> <span style="color:#ff5100">solid;</span><br> 
+                                        <span style="color:#474747">border-image:</span> <span style="color:#ff5100">url('img/borde.png') 20% round;</span><br>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr style="background-color: rgb(244, 244, 255);">
+                                <td colspan="4">
+                                    <span style="display: block;padding: 15px; width: 60%; position: relative; left: 50%; transform: translateX(-50%);
+                                                font-size: 24px; font-weight: 700; border: 5px dotted black; border-radius: 50%;">CELIA VIÑAS</span><br><br>
+                                    <span style="font-weight: 700;"> 
+                                        <span style="color:#474747">border:</span> <span style="color:#ff5100">5px dotted black</span><br> 
+                                        <span style="color:#474747">border-radius:</span> <span style="color:#ff5100">5px;</span><br> 
+                                    </span>
+                                </td>
+                                
+                            </tr>
+
+                        </table>
+
+
+                        <table class="tablaProp">
+                            <tr style="background-color: rgb(255, 94, 0); color: white; padding: 5px;">
+                                <th colspan="4">Márgenes interiores y exteriores</th>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><strong>Permite modificar los márgenes de una caja</strong></td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td>margin-top</td>
+                                <td>margin-bottom</td>
+                                <td>margin-left</td>
+                                <td>margin-right</td>
+                            </tr>
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td>padding-top</td>
+                                <td>padding-bottom</td>
+                                <td>padding-left</td>
+                                <td>padding-right</td>
+                            </tr>
+                            <tr style="background-color: rgb(244, 244, 255);">
+                                <td colspan="4">
+                                    <img src="img/marginpadding.png" style="width: 100%">
+                                </td>
+                            </tr>
+
+                        </table>
+
+
+                        <table class="tablaProp">
+                            <tr style="background-color: rgb(255, 94, 0); color: white; padding: 5px;">
+                                <th colspan="4">Propiedad background</th>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><strong>Permite modificar el fondo de una caja</strong></td>
+                            </tr>
+
+                            <tr style="background-color: rgb(230, 231, 255);">
+                                <td>background-color</td>
+                                <td>background-image</td>
+                                <td>background-size</td>
+                                <td>background-repeat</td>
+                            </tr>
+                            <tr style="background-color: rgb(244, 244, 255);">
+                                <td colspan="4">
+                                    <img src="img/marginpadding.png" style="width: 100%">
+                                </td>
+                            </tr>
+
+                        </table>
+
+
                     </div>
                 </td>
 
