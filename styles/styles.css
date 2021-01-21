@@ -11,6 +11,39 @@ body {
     cursor: cell;
 }
 
+#modal {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    transform: translateX(-50%);
+    font-family: arial;
+    display: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+}
+
+#modal #cerrar {
+    width: 15px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+#fondo {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    display: none;
+}
+
 .headerPos1 {
     min-width: 100vw;
     min-height: 100vh;
@@ -293,4 +326,16 @@ body {
     border: 1px solid black;
     animation: nombreAnimacion 5s infinite;
 
+}
+
+.cajita {
+    display: block;
+    border-radius: 20px;
+    width: 200px !important;
+    height: 60px !important;
+    background-color: red !important;
+    transition: 0.5s !important;
+    margin-top: 60px;
+    left: 0%;
+    padding: 20px;
 }

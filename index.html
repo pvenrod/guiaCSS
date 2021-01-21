@@ -35,6 +35,45 @@
             })
         })
 
+        function abrirModal() {
+            $("#modal").show();
+            $("#fondo").show();
+        }
+
+        function cerrarModal() {
+            $("#modal").hide();
+            $("#fondo").hide();
+        }
+
+        $(document).ready(function() {
+            $("html, body").animate({ scrollTop: 0 }, "fast");
+
+            $("#cajasSombras").click(function() {
+                $("#modal").css("box-shadow","none")
+            })
+            $("#bordesRedondeados").click(function() {
+                $("#modal").css("border-radius","0px")
+            })
+            $("#estilosBorde").click(function() {
+                $("#modal").css("border", "15px solid");
+                $("#modal").css("border-image","linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) round");
+                $("#modal").css("border-image-slice","1");
+            })
+
+            $("#posExtra").click(function() {
+                $(".cajita").css("position","relative")
+            })
+
+            $("#leftExtra").click(function() {
+                $(".cajita").css("left","50%")
+            })
+
+            $("#transExtra").click(function() {
+                $(".cajita").css("transform","translateX(-50%)")
+            })
+        })
+        
+
     </script>
 </head>
 <body>
@@ -56,6 +95,32 @@
         </table>
     </div>
     <img src="img/logo.png" class="logoPos1" id="logo">
+    <div id="fondo"></div>
+    <div id="modal">
+        <img src="img/cerrar.png" onclick="cerrarModal()" id="cerrar" style="cursor: pointer">
+        En CSS3, se implementaron:<br>
+        <ul>
+            <li>
+                Los <i>@media queries</i> 
+            </li>
+            <li>
+                <span id="cajasSombras" style="cursor:pointer">Cajas y textos con sombras</span>
+            </li>
+            <li>
+                <span id="bordesRedondeados" style="cursor:pointer">Bordes redondeados</span>
+            </li>
+            <li>
+                <span id="estilosBorde" style="cursor:pointer">Estilos de borde</span>
+            </li>
+            <li>
+                <span>Animaciones</span>
+            </li>
+            <li>
+                <span>Diseño de cuadrículas (grid)</span>
+            </li>
+        </ul>
+        
+    </div>
     <div id="content">
         <table>
             <tr>
@@ -71,7 +136,9 @@
                             Un estilo CSS está formado de la siguiente manera:<br><br>
                             <span style="color: orange">selector</span><span style="color: rgb(0, 0, 0)">:</span><span  style="color: rgb(161, 75, 179)">pseudoselector </span><span style="color: rgb(0, 217, 255)">{</span><br>
                                 <span style="color: rgb(93, 106, 116)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;propiedad</span>: <span style="color: rgb(255, 72, 0)">valor</span>;<br>
-                            <span style="color: rgb(0, 217, 255)">}</span>
+                            <span style="color: rgb(0, 217, 255)">}</span><br><br>
+                            Actualmente se encuentra en su tercera versión (<strong>CSS3</strong>), la cual 
+                            fue lanzada en 2011 e incluyó <span style="text-decoration: underline; cursor: pointer" onclick="abrirModal()">muchas mejoras</span>.
                         </div>
 
                     </div><br><br><br>
@@ -628,7 +695,13 @@
                         </div>
 
                         <img src="img/responsive5.gif" style="width: 80%; vertical-align: top;">
-                    
+
+                        <div class="textoNo" style="text-align: left; box-shadow: none; background-color: transparent; margin-top: 10px;">
+                            Por último, para adaptar los estilos a las diferentes resoluciones de pantalla, utilizaremos los llamados <i><strong>@media queries</strong></i> introducidos
+                            en CSS3, los cuales tienen el siguiente aspecto:
+                        </div>
+
+                        <img src="img/media.png" style="width: 80%; vertical-align: top;">
                     </div>
 
                 </td>
@@ -666,6 +739,24 @@
                         </div>
 
                         <img src="img/extra2.png" style="width: 70%; vertical-align: top;">
+
+                        <div class="textoNo" style="text-align: left; box-shadow: none; background-color: transparent; margin-top: 10px;">
+                            - Si queremos alinear cualquier elemento en el centro, ya sea horizontal o verticalmente, bastará con:
+                            <ul>
+                                <li>
+                                    Aplicar un posicionamiento al elemento (<strong><span style="cursor: pointer; text-decoration: underline" id="posExtra">absoluto, relativo, fixed o sticky</span></strong>).
+                                </li>
+                                <li>
+                                    Desplazar el elemento un 50% de la pantalla hacia la derecha (<strong><span style="cursor: pointer; text-decoration: underline" id="leftExtra">left: 50%</span></strong>);
+                                </li>
+                                <li>
+                                    Volver a desplazar el elemento un 50% de su tamaño hacia la izquierda (<strong><span style="cursor: pointer; text-decoration: underline" id="transExtra">transform: translateX(-50%)</span></strong>).
+                                </li>
+                            </ul>
+                            <caja class="cajita">
+
+                            </caja>
+                        </div>
 
                     </div>
                 </td>
